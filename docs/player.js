@@ -9,13 +9,16 @@ function action(){
 let matches = 0;
 function action(oppornent){
   matches = matches + 1;
-  const remainder = matches % 2;
+  const remainder = matches % 3;
   const isEven = remainder == 0;
+  const amari01 = remainder == 1;
   console.log(`${matches} % 2 == ${remainder} : ${isEven}`);
   if(isEven){
+    return CHOKI
+  }else if(amari01){
     return GU
   }
-  return PA;
+  return GU;
 }
 
 
